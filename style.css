@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height:400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.results {
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}

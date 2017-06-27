@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <form class="form" action="" method="post">
+      <label for="textInput">Worried about the tone of that message you are about to send? Input the text here:</label>
+      <textarea id="textInput" name="textInput" rows="8" cols="80"></textarea>
+      <button id="submit" type="submit" name="button">Submit</button>
+    </form>
+
+    <div class="results">
+      <h1>The tones in your message are as follows:</h1>
+      <p>Anger: <span id="anger"></span></p>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+      <p>Disgust: <span id="disgust"></span></p>
+      <p>Fear: <span id="fear"></span></p>
+      <p>Joy: <span id="joy"></span></p>
+      <p>Sadness: <span id="sadness"></span></p>
+      <form class="" action="popup.html" method="get">
+        <button id="reset" type="submit" name="button">Try Again?</button>
+      </form>
+    </div>
+
+
+    <script src="jquery.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
