@@ -1,3 +1,5 @@
+
+
 body {
   display: flex;
   justify-content: center;
@@ -17,15 +19,51 @@ form {
   display: none;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 
-#myProgress {
-    width: 100%;
+.myProgress {
+    width: 80%;
     background-color: grey;
+    margin-bottom: 3%;
 }
 
-#myBar {
-    width: 1%;
+#angerBar {
+    text-align: center;
+    min-width: 2em;
     height: 30px;
     background-color: green;
+}
+
+#disgustBar {
+    text-align: center;
+    min-width: 2em;
+    height: 30px;
+    background-color: green;
+}
+
+#fearBar {
+    text-align: center;
+    min-width: 2em;
+    height: 30px;
+    background-color: green;
+}
+
+#joyBar {
+    text-align: center;
+    min-width: 2em;
+    height: 30px;
+    background-color: green;
+}
+
+#sadnessBar {
+    text-align: center;
+    min-width: 2em;
+    height: 30px;
+    background-color: green;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
