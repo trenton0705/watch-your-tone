@@ -19,10 +19,33 @@ form {
   text-align: center;
 }
 
-h1{
+h1 {
   color: white;
   font-size: 4em;
   text-shadow: 5px 5px black;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.bars {
+  height: 25px;
+}
+
+.myProgress {
+  width: 80%;
+  background-color: grey;
+  margin-bottom: 3%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.percent {
+  position: absolute;
+  left: 47.5%;
+  top: 3%;
 }
 
 .results {
@@ -36,42 +59,9 @@ h1{
   animation: fadeInLoad 1s;
 }
 
-.myProgress {
-  width: 80%;
-  background-color: grey;
-  margin-bottom: 3%;
-  border: 1px solid black;
-  position: relative;
-}
-
-#angerBar {
-  text-align: center;
-  height: 25px;
-}
-
-#disgustBar {
-  text-align: center;
-  height: 25px;
-}
-
-#fearBar {
-  text-align: center;
-  height: 25px;
-}
-
-#joyBar {
-  text-align: center;
-  height: 25px;
-}
-
-#sadnessBar {
-  text-align: center;
-  height: 25px;
-}
-
-p {
-  margin: 0;
-  padding: 0;
+#reset {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 
 #submit {
@@ -79,11 +69,6 @@ p {
   background-color: rgba(0, 0, 0, 0.9);
   width: 40%;
   align-self: center;
-  color: white;
-}
-
-#reset {
-  background-color: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
@@ -103,18 +88,11 @@ p {
   outline-width: 0;
 }
 
-
 @keyframes fadeInLoad {
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
-}
-
-.percent {
-  position: absolute;
-  left: 47.5%;
-  top: 3%;
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

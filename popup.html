@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Title</title>
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-    <form id="form" class="form" action="" method="post">
-      <h1>Watch Your Tone!</h1>
-      <label style="color: white" for="textInput"></label>
-      <textarea id="textInput" name="textInput" rows="1" cols="80" autofocus placeholder="Input the message you want analyzed"></textarea>
-      <button id="submit" type="submit" name="button">Submit</button>
-    </form>
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <div id="results" class="results">
-      <h2 style="margin: 5% 0">Results</h2>
-      <p>Anger <span id="anger"></span></p>
-      <div class="myProgress">
-        <div id="angerBar"></div>
-        <span id="angerPercent" class="percent">0%</span>
-      </div>
-      <p>Disgust <span id="disgust"></span></p>
-      <div class="myProgress">
-        <div id="disgustBar"></div>
-        <span id="disgustPercent" class="percent">0%</span>
-      </div>
-      <p>Fear <span id="fear"></span></p>
-      <div class="myProgress">
-        <div id="fearBar"></div>
-        <span id="fearPercent" class="percent">0%</span>
-      </div>
-      <p>Joy <span id="joy"></span></p>
-      <div class="myProgress">
-        <div id="joyBar"></div>
-        <span id="joyPercent" class="percent">0%</span>
-      </div>
-      <p>Sadness <span id="sadness"></span></p>
-      <div class="myProgress">
-        <div id="sadnessBar"></div>
-        <span id="sadnessPercent" class="percent">0%</span>
-      </div>
-      <form class="" action="popup.html" method="get">
-        <button id="reset" type="submit" name="button">Try Again?</button>
-      </form>
+<body>
+
+  <form id="form" class="form" action="" method="post">
+    <h1>Watch Your Tone!</h1>
+    <textarea id="textInput" name="textInput" rows="1" cols="80" autofocus placeholder="Input the message you want analyzed"></textarea>
+    <button id="submit" type="submit" name="button">Submit</button>
+  </form>
+
+  <div id="results" class="results">
+
+    <h2 style="margin: 5% 0">Results</h2>
+
+    <p>Anger <span id="anger"></span></p>
+    <div class="myProgress">
+      <div class="bars" id="angerBar"></div>
+      <span id="angerPercent" class="percent">0%</span>
     </div>
 
+    <p>Disgust <span id="disgust"></span></p>
+    <div class="myProgress">
+      <div class="bars" id="disgustBar"></div>
+      <span id="disgustPercent" class="percent">0%</span>
+    </div>
 
-    <script src="jquery.js" charset="utf-8"></script>
-    <script src="app.js" charset="utf-8"></script>
-  </body>
+    <p>Fear <span id="fear"></span></p>
+    <div class="myProgress">
+      <div class="bars" id="fearBar"></div>
+      <span id="fearPercent" class="percent">0%</span>
+    </div>
+
+    <p>Joy <span id="joy"></span></p>
+    <div class="myProgress">
+      <div class="bars" id="joyBar"></div>
+      <span id="joyPercent" class="percent">0%</span>
+    </div>
+
+    <p>Sadness <span id="sadness"></span></p>
+    <div class="myProgress">
+      <div class="bars" id="sadnessBar"></div>
+      <span id="sadnessPercent" class="percent">0%</span>
+    </div>
+
+    <form class="" action="popup.html" method="get">
+      <button id="reset" type="submit" name="button">Try Again?</button>
+    </form>
+  </div>
+
+
+  <script src="jquery.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
 </html>

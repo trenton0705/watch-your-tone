@@ -39,12 +39,10 @@ function callAPI(inputText) {
         } else {
           document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#38931a'
         }
-      } //for
-
+      }
       pageFadeIn()
-
-    }) //.then
-} //callAPI
+    })
+}
 
 $(function() {
   $("#textInput").bind("keyup", function() {
