@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <form class="form" action="" method="post">
-      <label for="textInput">Worried about the tone of that message you are about to send? Input the text here:</label>
-      <textarea id="textInput" name="textInput" rows="8" cols="80"></textarea>
+    <form id="form" class="form" action="" method="post">
+      <h1>Watch Your Tone!</h1>
+      <label style="color: white" for="textInput"></label>
+      <textarea id="textInput" name="textInput" rows="1" cols="80" autofocus placeholder="Input the message you want analyzed"></textarea>
       <button id="submit" type="submit" name="button">Submit</button>
     </form>
 
-    <div class="results">
+    <div id="results" class="results">
+      <h2 style="margin: 5% 0">Results:</h2>
       <p>Anger: <span id="anger"></span></p>
       <div class="myProgress">
         <div id="angerBar">0%</div>

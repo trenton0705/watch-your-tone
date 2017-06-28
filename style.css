@@ -1,10 +1,14 @@
-
-
 body {
+  font-family: Arvo;
   display: flex;
   justify-content: center;
-  width: 800px;
-  height:400px;
+  width: 750px;
+  height: 500px;
+  background: url('http://i.imgur.com/ZYlHqsK.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 form {
@@ -12,58 +16,103 @@ form {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  font-size: 4em;
+  text-shadow: 2px 2px darkblue;
 }
 
 .results {
+  color: white;
+  text-shadow: 1px 1px center
   margin: 0;
   display: none;
   flex-direction: column;
   align-items: center;
   width: 80%;
+  animation: fadeInLoad 1s;
 }
 
 .myProgress {
-    width: 80%;
-    background-color: grey;
-    margin-bottom: 3%;
+  width: 80%;
+  background-color: grey;
+  margin-bottom: 3%;
+  border: 1px solid black;
 }
 
 #angerBar {
-    text-align: center;
-    min-width: 2em;
-    height: 30px;
-    background-color: green;
+  text-align: center;
+  min-width: 2em;
+  height: 25px;
+  background-color: green;
 }
 
 #disgustBar {
-    text-align: center;
-    min-width: 2em;
-    height: 30px;
-    background-color: green;
+  text-align: center;
+  min-width: 2em;
+  height: 25px;
+  background-color: green;
 }
 
 #fearBar {
-    text-align: center;
-    min-width: 2em;
-    height: 30px;
-    background-color: green;
+  text-align: center;
+  min-width: 2em;
+  height: 25px;
+  background-color: green;
 }
 
 #joyBar {
-    text-align: center;
-    min-width: 2em;
-    height: 30px;
-    background-color: green;
+  text-align: center;
+  min-width: 2em;
+  height: 25px;
+  background-color: green;
 }
 
 #sadnessBar {
-    text-align: center;
-    min-width: 2em;
-    height: 30px;
-    background-color: green;
+  text-align: center;
+  min-width: 2em;
+  height: 25px;
+  background-color: green;
 }
 
 p {
   margin: 0;
   padding: 0;
+}
+
+#submit {
+  margin-top: 3%;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 40%;
+  align-self: center;
+  color: white;
+}
+
+#textInput {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: center;
+  font-size: 2em;
+  width: 80%;
+  align-self: center;
+  resize: vertical;
+}
+
+#textInput:focus {
+  outline-width: 0;
+}
+
+
+@keyframes fadeInLoad {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
 }
