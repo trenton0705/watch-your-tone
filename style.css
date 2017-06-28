@@ -22,12 +22,12 @@ form {
 h1{
   color: white;
   font-size: 4em;
-  text-shadow: 2px 2px darkblue;
+  text-shadow: 5px 5px black;
 }
 
 .results {
   color: white;
-  text-shadow: 1px 1px center
+  text-shadow: 1px 1px center;
   margin: 0;
   display: none;
   flex-direction: column;
@@ -41,41 +41,32 @@ h1{
   background-color: grey;
   margin-bottom: 3%;
   border: 1px solid black;
+  position: relative;
 }
 
 #angerBar {
   text-align: center;
-  min-width: 2em;
   height: 25px;
-  background-color: green;
 }
 
 #disgustBar {
   text-align: center;
-  min-width: 2em;
   height: 25px;
-  background-color: green;
 }
 
 #fearBar {
   text-align: center;
-  min-width: 2em;
   height: 25px;
-  background-color: green;
 }
 
 #joyBar {
   text-align: center;
-  min-width: 2em;
   height: 25px;
-  background-color: green;
 }
 
 #sadnessBar {
   text-align: center;
-  min-width: 2em;
   height: 25px;
-  background-color: green;
 }
 
 p {
@@ -88,6 +79,11 @@ p {
   background-color: rgba(0, 0, 0, 0.9);
   width: 40%;
   align-self: center;
+  color: white;
+}
+
+#reset {
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
@@ -115,4 +111,10 @@ from {
 to {
   opacity: 1;
 }
+}
+
+.percent {
+  position: absolute;
+  left: 47.5%;
+  top: 3%;
 }
