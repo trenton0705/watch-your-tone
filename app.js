@@ -4,8 +4,8 @@ $('#submit').click(function(event) {
   if (userInput.length === 0) {
     $('#textInput').attr('placeholder', 'You need to enter something to test!')
   } else {
-  callAPI(userInput)
-  document.getElementById('loader').style.display = 'block'
+    callAPI(userInput)
+    document.getElementById('loader').style.display = 'block'
   }
 })
 
@@ -17,8 +17,8 @@ $(function() {
       if (userInput.length === 0) {
         $('#textInput').attr('placeholder', 'You need to enter something to test!')
       } else {
-      callAPI(userInput)
-      document.getElementById('loader').style.display = 'block'
+        callAPI(userInput)
+        document.getElementById('loader').style.display = 'block'
       }
     }
   });
@@ -51,7 +51,7 @@ function callAPI(inputText) {
         }
       }
       pageFadeIn()
-    }).catch(function(){
+    }).catch(function() {
       pageError()
     })
 }
