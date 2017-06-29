@@ -37,17 +37,18 @@ function callAPI(inputText) {
       var toneNames = ['anger', 'disgust', 'fear', 'joy', 'sadness']
 
       for (let i = 0; i < 5; i++) {
+
         document.getElementById(toneNames[i] + 'Bar').style.width = toneArray[i] + '%'
         $('#' + toneNames[i] + 'Percent').text(toneArray[i] + '%')
 
         if (toneArray[i] >= 75) {
-          document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#7a1212'
-        } else if (toneArray[i] < 75 && toneArray[i] >= 50) {
-          document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#ad560a'
-        } else if (toneArray[i] > 20 && toneArray[i] < 50) {
-          document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#afa708'
-        } else {
           document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#38931a'
+        } else if (toneArray[i] < 75 && toneArray[i] >= 50) {
+          document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#afa708'
+        } else if (toneArray[i] > 20 && toneArray[i] < 50) {
+          document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#ad560a'
+        } else {
+          document.getElementById(toneNames[i] + 'Bar').style.backgroundColor = '#7a1212'
         }
       }
       pageFadeIn()
