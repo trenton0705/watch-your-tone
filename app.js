@@ -1,7 +1,12 @@
 $('#submit').click(function(event) {
   event.preventDefault()
   var userInput = $('#textInput').val()
+  if (userInput.length === 0) {
+    $('#textInput').attr('placeholder', 'You need to enter something to test!')
+  } else {
   callAPI(userInput)
+  document.getElementById('loader').style.display = 'block'
+  }
 })
 
 $(function() {
@@ -9,7 +14,12 @@ $(function() {
     if (e.which == 13) {
       e.preventDefault()
       var userInput = $('#textInput').val()
+      if (userInput.length === 0) {
+        $('#textInput').attr('placeholder', 'You need to enter something to test!')
+      } else {
       callAPI(userInput)
+      document.getElementById('loader').style.display = 'block'
+      }
     }
   });
 });
@@ -41,6 +51,8 @@ function callAPI(inputText) {
         }
       }
       pageFadeIn()
+    }).catch(function(){
+      pageError()
     })
 }
 
@@ -62,5 +74,16 @@ function pageFadeIn() {
 
 function showPage() {
   document.getElementById("form").style.display = "none";
+  document.getElementById('loader').style.display = 'none';
   document.getElementById("results").style.display = "flex";
+}
+
+function pageError() {
+  setTimeout(showError, 500);
+}
+
+function showError() {
+  document.getElementById("form").style.display = "none";
+  document.getElementById('loader').style.display = 'none';
+  document.getElementById("errorMessage").style.display = "block";
 }

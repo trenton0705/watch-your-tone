@@ -15,7 +15,15 @@
     <h1>Watch Your Tone!</h1>
     <textarea id="textInput" name="textInput" rows="1" cols="80" autofocus placeholder="Input the message you want analyzed"></textarea>
     <button id="submit" type="submit" name="button">Submit</button>
+    <div id="loader"></div>
   </form>
+
+  <div id="errorMessage">
+    <h1>Oops, Something went wrong!</h1>
+    <form class="" action="popup.html" method="get">
+      <button class="reset" type="submit" name="button">Try Again?</button>
+    </form>
+  </div>
 
   <div id="results" class="results">
 
@@ -52,7 +60,7 @@
     </div>
 
     <form class="" action="popup.html" method="get">
-      <button id="reset" type="submit" name="button">Try Again?</button>
+      <button class="reset" type="submit" name="button">Try Again?</button>
     </form>
   </div>
 
