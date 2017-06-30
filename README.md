@@ -12,3 +12,6 @@ The main piece of technology used was the IBM Watson API, which is combined with
 
 ## To Download
 Download it from the Chrome Web Store: https://chrome.google.com/webstore/detail/watch-your-tone/nilbkkjdhkegpfgcjhepnmmlablhomab?authuser=0
+
+### Acknowledgements 
+Big thanks to Cass Torske for helping with the server side aspects of this project.
