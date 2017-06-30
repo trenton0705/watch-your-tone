@@ -1,5 +1,5 @@
 # Watch Your Tone!
-Watch Your Tone is a Chrome extension which allows the user to understand what emotional tones may be hidden in their message before they send it.
+Watch Your Tone is a Chrome extension which allows the user to understand what emotional tones may be hidden in their message before they send it.  All you have to do is enter some text into the field, and click submit!
 
 ## Screenshots
 
